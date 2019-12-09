@@ -1,0 +1,33 @@
+board = chess.Board();
+print(board);
+
+
+# các ?ng c? viên
+moves = board.legal_moves;
+legal_moves = [str(legal_move) for legal_move in board.legal_moves]
+print(legal_moves);
+
+
+#di chuy?n quân
+board.push(chess.Move.from_uci(legal_moves[0]));
+print(board);
+
+
+# các ?ng c? viên
+moves = board.legal_moves;
+legal_moves = [str(legal_move) for legal_move in board.legal_moves]
+print(legal_moves);
+
+
+#di chuy?n quân
+board.push(chess.Move.from_uci(legal_moves[0]));
+print(board);
+
+
+#không th?c hi?n di chuy?n.
+#board.pop();
+#print(board);
+
+
+# Ki?m tra chi?u h?t
+print(board.is_game_over());
